@@ -55,7 +55,7 @@ export default function Home() {
 
           <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full bg-[#4CAF50] flex items-center justify-center">
             <Image
-              src="https://avatars.githubusercontent.com/u/69434680"
+              src=""
               alt="Foto de perfil"
               width={350}
               height={350}

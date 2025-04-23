@@ -2,11 +2,7 @@ import Link from "next/link"
 import { ArrowLeft, Star, GitFork, Eye, Calendar, Code, ExternalLink, Clock, GitBranch, FileCode } from "lucide-react"
 import { notFound } from "next/navigation"
 
-interface RepoParams {
-  params: {
-    repo: string
-  }
-}
+// Removed unused RepoParams interface
 
 async function getRepoDetails(repoName: string) {
   try {
@@ -80,7 +76,7 @@ function formatDate(dateString: string) {
   }).format(date)
 }
 
-export default async function RepoDetails({ params }: RepoParams) {
+export default async function RepoDetails({ params }: { params: { repo: string } }) {
   const repoName = params.repo
   const repo = await getRepoDetails(repoName)
   const readme = await getRepoReadme(repoName)
@@ -95,9 +91,9 @@ export default async function RepoDetails({ params }: RepoParams) {
   const languagePercentages = Object.entries(languages)
     .map(([name, bytes]: [string, any]) => ({
       name,
-      percentage: Math.round((bytes / totalBytes) * 100),
+  const totalBytes = Object.values(languages).reduce((sum: number, bytes: number) => sum + bytes, 0)
     }))
-    .sort((a, b) => b.percentage - a.percentage)
+    .map(([name, bytes]: [string, number]) => ({
 
   return (
     <main className="flex flex-col min-h-screen bg-[#121212]">
@@ -245,7 +241,7 @@ export default async function RepoDetails({ params }: RepoParams) {
                       </div>
                     </div>
                   ))}
-                </div>
+                        <div className={`bg-green-500 h-2.5 rounded-full`} styleName={`width-${lang.percentage}`}></div>
               ) : (
                 <p className="text-gray-400">Informações de linguagens não disponíveis.</p>
               )}
