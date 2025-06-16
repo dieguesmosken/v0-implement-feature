@@ -6,18 +6,23 @@ export default function QuaseProntoStudios() {
     <main className="flex flex-col min-h-screen bg-[#0d0d0d]">
       <header className="container mx-auto px-4 py-6">
         <nav className="flex justify-between items-center">
-          <Link href="/" className="text-[#4CAF50] text-xl font-bold">
-            BADWOLF3D
+          <Link href="/" className="text-[#bb00ff] mt-4" style={{ fontFamily: "'Press Start 2P', monospace" }}>
+            Quase Pronto Studios
           </Link>
           <div className="flex gap-8">
-            <Link href="/sobre" className="text-[#4CAF50] hover:text-[#5dc761]">
+            <Link
+              href="/sobre"
+              className="text-[#4CAF50] hover:text-[#bb00ff]"
+              style={{ fontFamily: "'Press Start 2P', monospace" }}
+            >
               Sobre mim
             </Link>
-            <Link href="/projetos" className="text-[#4CAF50] hover:text-[#5dc761]">
+            <Link
+              href="/projetos"
+              className="text-[#4CAF50] hover:text-[#bb00ff]"
+              style={{ fontFamily: "'Press Start 2P', monospace" }}
+            >
               Projetos
-            </Link>
-            <Link href="/quase-pronto-studios" className="text-[#4CAF50] hover:text-[#5dc761] underline">
-              Quase Pronto Studios
             </Link>
           </div>
         </nav>
@@ -27,7 +32,7 @@ export default function QuaseProntoStudios() {
         <header className="text-center py-8">
           <div className="mb-4">
             <Image
-              src="/placeholder.svg?height=200&width=300"
+              src="/logo_quase-pronto-studios.png"
               alt="Logo Quase Pronto Studios"
               width={300}
               height={200}
@@ -35,12 +40,6 @@ export default function QuaseProntoStudios() {
               style={{ imageRendering: "pixelated" }}
             />
           </div>
-          <h1
-            className="text-[#bb00ff] text-2xl md:text-3xl mt-4"
-            style={{ fontFamily: "'Press Start 2P', monospace" }}
-          >
-            Quase Pronto Studios
-          </h1>
         </header>
 
         <main className="max-w-4xl mx-auto my-8 p-4 bg-[#1a1a1a] border-2 border-[#bb00ff] rounded-lg">
@@ -60,8 +59,12 @@ export default function QuaseProntoStudios() {
               🎮 Jogos
             </h2>
             <p className="leading-relaxed text-sm text-white" style={{ fontFamily: "'Press Start 2P', monospace" }}>
-              <strong>Survive The Night</strong>: Um jogo de sobrevivência em pixel art onde os perigos só aparecem
-              quando o sol se põe. Em breve no{" "}
+              <strong>
+                <Link href="/quase-pronto-studios/survive-the-night" className="text-[#bb00ff] hover:underline">
+                  Survive The Night
+                </Link>
+              </strong>
+              : Um jogo de sobrevivência em pixel art onde os perigos só aparecem quando o sol se põe. Em breve no{" "}
               <a href="#" className="text-[#bb00ff] hover:underline">
                 itch.io
               </a>
@@ -83,8 +86,8 @@ export default function QuaseProntoStudios() {
               </p>
               <p>
                 E-mail:{" "}
-                <a href="mailto:contato@quasepronto.dev" className="text-[#bb00ff] hover:underline">
-                  contato@quasepronto.dev
+                <a href="mailto:qpsgamedev@badwolf3d.com.br" className="text-[#bb00ff] hover:underline">
+                  qpsgamedev@badwolf3d.com.br
                 </a>
               </p>
             </div>
