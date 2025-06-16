@@ -55,8 +55,12 @@ export default function QuaseProntoStudios() {
               🎮 Jogos
             </h2>
             <p className="leading-relaxed text-sm text-white" style={{ fontFamily: "'Press Start 2P', monospace" }}>
-              <strong>Survive The Night</strong>: Um jogo de sobrevivência em pixel art onde os perigos só aparecem
-              quando o sol se põe. Em breve no{" "}
+              <strong>
+                <Link href="/quase-pronto-studios/survive-the-night" className="text-[#bb00ff] hover:underline">
+                  Survive The Night
+                </Link>
+              </strong>
+              : Um jogo de sobrevivência em pixel art onde os perigos só aparecem quando o sol se põe. Em breve no{" "}
               <a href="#" className="text-[#bb00ff] hover:underline">
                 itch.io
               </a>
