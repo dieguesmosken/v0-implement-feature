@@ -6,22 +6,17 @@ export default function QuaseProntoStudios() {
     <main className="flex flex-col min-h-screen bg-[#0d0d0d]">
       <header className="container mx-auto px-4 py-6">
         <nav className="flex justify-between items-center">
-          <Link href="/" className="text-[#bb00ff] mt-4" style={{ fontFamily: "'Press Start 2P', monospace" }}>
+          <Link href="/" className="text-[#bb00ff] mt-4"
+            style={{ fontFamily: "'Press Start 2P', monospace" }}>
+            
             Quase Pronto Studios
+          
           </Link>
           <div className="flex gap-8">
-            <Link
-              href="/sobre"
-              className="text-[#4CAF50] hover:text-[#bb00ff]"
-              style={{ fontFamily: "'Press Start 2P', monospace" }}
-            >
+            <Link href="/sobre" className="text-[#4CAF50] hover:text-[#bb00ff]" style={{ fontFamily: "'Press Start 2P', monospace" }}>
               Sobre mim
             </Link>
-            <Link
-              href="/projetos"
-              className="text-[#4CAF50] hover:text-[#bb00ff]"
-              style={{ fontFamily: "'Press Start 2P', monospace" }}
-            >
+            <Link href="/projetos" className="text-[#4CAF50] hover:text-[#bb00ff]" style={{ fontFamily: "'Press Start 2P', monospace" }}>
               Projetos
             </Link>
           </div>
@@ -40,6 +35,7 @@ export default function QuaseProntoStudios() {
               style={{ imageRendering: "pixelated" }}
             />
           </div>
+          
         </header>
 
         <main className="max-w-4xl mx-auto my-8 p-4 bg-[#1a1a1a] border-2 border-[#bb00ff] rounded-lg">
